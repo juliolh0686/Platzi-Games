@@ -1,0 +1,54 @@
+.articulos {
+	width: 100%;
+	padding: 50px;
+	@include media(tablet) {
+		
+    }
+	@include media(desktop-s) {
+		width: 50%;
+	}
+}
+.articulo {
+	margin-bottom: 75px;
+	border-bottom: 3px solid $color-secundario;
+	&__categoria {
+		font-weight: 500;
+		font-size: 14px;
+		color: $color-secundario;
+		@include titulos($Fuente2);
+	}
+	&__titulo {
+		font-size: 20px;
+		color: $color-primario;
+		@include titulos($Fuente2);
+	}
+	&__descripcion {
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 30px;
+		padding-right: 100px;
+	}
+}
+
+.articulo--principal {
+	width: 80%;
+	max-width: 660px;
+	margin: 60px auto 0 auto;
+	&__intro {
+		@include font-size(25px);
+		font-weight: bold;
+	}
+	h3 {
+		color: $color-secundario;
+	}
+	h2 {
+		margin: 40px 0 40px 0;	
+		text-align: center;
+	}
+	@include media(tablet) {
+		max-width: 660px;
+    }
+	@include media(desktop-s) {
+		max-width: 660px;
+	}
+}
